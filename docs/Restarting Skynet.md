@@ -28,7 +28,7 @@ npm start
 Leave the terminal open, remove the VGA monitor, mouse and keyboard. Everything else skynet related should start automatically. 
 
 #### Isn't that a hacky and stupid way to start the server?
-Yes, I don't know a better way. Email Alex Walter if you want. 
+Yes, I don't know a better way. You're welcome to look into a better way of doing it, or asking Alex W. 
 
 
 
