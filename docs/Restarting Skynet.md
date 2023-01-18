@@ -19,7 +19,6 @@ Still using the locally attached monitor, keyboard and mouse, log in as the wiki
 
 [^1]: If running this command in the `/server` directory does not work, go up one directory to `/wiki` and try again. I'm writing this from memory and I can't test right now.
 
-
 ```shell
 cd /mnt/data/wiki/server/
 ```
