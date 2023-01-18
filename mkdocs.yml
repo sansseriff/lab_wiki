@@ -29,16 +29,19 @@ extra_css:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.snippets:
-      check_paths: true
-  - attr_list
+  # - pymdownx.snippets:
+  #     check_paths: true
   - md_in_html
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true 
   - footnotes
-  # - pymdownx.superfences
-  # - footnotes
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
 
 # extra:
 #   analytics:
