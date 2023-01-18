@@ -20,7 +20,7 @@ If you're starting the software just after closing the fridge.
     We are not using a computer-controlled valve, so the `OPEN Valve` button on the `Startup` tab does not do anything. 
 1. **Start the pumping macro.** 
     This will take about 45 minutes to reach P < 5e-3 Torr. 
-    ![pumping_macro](/images/spot2_pump_cooldown.PNG)
+    ![pumping_macro](images/spot2_pump_cooldown.PNG)
 2. **Start one of the cooldown macros. **
     As of January 2023, the newer liquid cooled compressor is not set up to automatically start from pressing one of these buttons. (That requires one of the long black cables we have be customized for the new compressor). Instead, start the compressor manually by going into the Hutzler compressor room and flipping the green switch from 0 to 1 state. You still need to press either the `Cooldown + condense + evaporate` or `Cooldown + condense` button, so that the heat switches will response automatically and cool down the fridge to the correct temperature when it's ready. 
     ![spot2_cooldown](images/spot2_cooldown.PNG)
