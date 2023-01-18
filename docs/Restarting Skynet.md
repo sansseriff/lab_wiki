@@ -15,7 +15,10 @@ Then wait until a password prompt appears on the screen. This can take a while, 
 ### 4. Start the wikijs server.
 For whatever reason, the wiki server does not start automatically. Long term, someone should either figure this out, or ideally migrate all the data off the existing installation and use a [docker or docker-compose](https://docs.requarks.io/install/docker) installation instead. Until that's figured out, we are stuck manually starting the wiki server. 
 
-Still using the locally attached monitor, keyboard and mouse, log in as the wiki user using the usual password. Open a terminal and navigate to '/mnt/data/wiki/server', 
+Still using the locally attached monitor, keyboard and mouse, log in as the wiki user using the usual password. Open a terminal and navigate to '/mnt/data/wiki/server' [^1]
+
+[^1]: If running this command in the `/server` directory does not work, go up one directory to `/wiki` and try again. I'm writing this from memory and I can't test right now.
+
 
 ```shell
 cd /mnt/data/wiki/server/
