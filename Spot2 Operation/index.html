@@ -1,0 +1,519 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Restarting%20Skynet/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+    
+    
+      
+        <title>Spot2 Operation - SNSPD Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#start-the-freezecontroll-software" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SNSPD Wiki" class="md-header__button md-logo" aria-label="SNSPD Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SNSPD Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Spot2 Operation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SNSPD Wiki" class="md-nav__button md-logo" aria-label="SNSPD Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    SNSPD Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Adding%20Wireguard%20Profiles%20on%20Skynet/" class="md-nav__link">
+        Adding Wireguard Profiles on Skynet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Restarting%20Skynet/" class="md-nav__link">
+        Restarting Skynet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Spot2 Operation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Spot2 Operation
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#start-the-freezecontroll-software" class="md-nav__link">
+    Start the freezecontroll software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-evacuating-and-cooling-down" class="md-nav__link">
+    Before evacuating and cooling down.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-the-fridge-is-already-cryo-pumping" class="md-nav__link">
+    If the fridge is already cryo-pumping
+  </a>
+  
+    <nav class="md-nav" aria-label="If the fridge is already cryo-pumping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activate-on-schedule-cycling" class="md-nav__link">
+    Activate On Schedule Cycling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#start-the-freezecontroll-software" class="md-nav__link">
+    Start the freezecontroll software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-evacuating-and-cooling-down" class="md-nav__link">
+    Before evacuating and cooling down.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-the-fridge-is-already-cryo-pumping" class="md-nav__link">
+    If the fridge is already cryo-pumping
+  </a>
+  
+    <nav class="md-nav" aria-label="If the fridge is already cryo-pumping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activate-on-schedule-cycling" class="md-nav__link">
+    Activate On Schedule Cycling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Spot2 Operation</h1>
+
+<h2 id="start-the-freezecontroll-software">Start the <code>freezecontroll</code> software</h2>
+<p>Navigate to <code>~/home/photonspot/freezecontrol2.1.7d.jpl-spot2</code>and open a terminal.</p>
+<p>Run:
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>freezecontrol2.1.7d_photonspot.py
+</code></pre></div></p>
+<p>The default python should be python 2.7. </p>
+<p>Depending on the state of the fridge, there's multiple things you may want to do:</p>
+<h2 id="before-evacuating-and-cooling-down">Before evacuating and cooling down.</h2>
+<p>If you're starting the software just after closing the fridge. </p>
+<ol>
+<li><strong>Make sure the main valve bewteen the fridge and pumping station is open. </strong>
+    We are not using a computer-controlled valve, so the <code>OPEN Valve</code> button on the <code>Startup</code> tab does not do anything. </li>
+<li><strong>Start the pumping macro.</strong> 
+    This will take about 45 minutes to reach P &lt; 5e-3 Torr. 
+    <img alt="pumping_macro" src="../images/spot2_pump_cooldown.PNG" /></li>
+<li>
+<p><strong>Start one of the cooldown macros. </strong>
+    As of January 2023, the newer liquid cooled compressor is not set up to automatically start from pressing one of these buttons. (That requires one of the long black cables we have be customized for the new compressor). Instead, start the compressor manually by going into the Hutzler compressor room and flipping the green switch from 0 to 1 state. You still need to press either the <code>Cooldown + condense + evaporate</code> or <code>Cooldown + condense</code> button, so that the heat switches will response automatically and cool down the fridge to the correct temperature when it's ready. 
+    <img alt="spot2_cooldown" src="../images/spot2_cooldown.PNG" /></p>
+</li>
+<li>
+<p><strong>Manually close the valve after about 24 hours. </strong>
+    Once the stages in the fridge reach a certain temperature (below the freezing temperature of air), the turbo pump is no longer removing any air from the cryostat. Instead if the pumping station has any tiny leaks, air will leak in and freeze on one of the stages of the cryostat. This should be avoided, so after about 24 hours of cooling the valve between the pumping station and cryostat should be closed. </p>
+<p>After the valve is closed the pumping station can be turned off. Go the the <code>Relays</code> tab in the software. </p>
+<ol>
+<li>First, turn off the turbo pump by checking the box and selecting <code>Turn OFF</code>. Wait for the turbo pump speed to go all the way down to zero. You can see the speed here: 
+<img alt="turbo_pump_speed" src="../images/turbo_pump_speed.PNG" /></li>
+<li>Then turn off the pumping station using it's relay, same way as for the turbo pump. As the pumping station shuts down, you will hear it vent the vacuum inside. This is why you definitely need to have the valve between the cryostat and pumping station closed before shutting it down. </li>
+</ol>
+</li>
+<li>
+<p>Start the daily cycling</p>
+<p>After about 48 hours, the fridge should be in a steady evaporate or condense state depending on which macro was chosen at the start. I usually choose the <code>Cooldown + condense + evaporate</code> macro so the fridge is at base temperature as soon as possible. </p>
+<p>Go to the <code>Cycle: On schedule</code> tab in the software and move the 2nd slider on the page to about 3.6. This is the slider following the phrase "Evaporate when T1k below:". </p>
+<p>With extra heat load on the 1K stage, I don't see T1K ever get below 3.4 K or so at the end of the condense process. If this slider is not adjusted above 3.4 K or so, then the fridge will be continuously waiting for T1K to get lower and will never start the evaporate macro. </p>
+<p>Finally, set the <code>Condense start</code> and <code>Evaporate start</code> times to your preference and hit the <code>Activate</code> button to start the on-schedule cycling. </p>
+<p>If something gets messed up about the on-schedule cycling (maybe you got the times wrong, or the evaporate temperature slider needs to be higher), just close the whole software and start over. The software as-is isn't very clear about when a certain macro is activated, and it can do weird things if you activate multiple macros over each other. </p>
+</li>
+</ol>
+<h2 id="if-the-fridge-is-already-cryo-pumping">If the fridge is already cryo-pumping</h2>
+<p>This could be the case after something with the computer got messed up, like there was a momentary power outage. </p>
+<p>The 1K stage could be in 3 possible states:</p>
+<ul>
+<li>The T1K stage is at about 4 Kelvin, the pot has likely run out of helium. The fridge needs to go through the condense and the evaporate steps. </li>
+<li>The T1K stage is at about 3.3 Kelvin or near there. The fridge is likely already condensed and just needs to evaporate</li>
+<li>The T1K stage is already at base temperature, about 0.9 K. This could be the case if you're just restarting the software. Skip ahead to <strong>Activate On Schedule Cycling</strong>.</li>
+</ul>
+<p>In the first two cases, take the following steps to get the fridge to base temperature immediately. Then you can set up the on schedule cycling:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Condense and Evaporate</label><label for="__tabbed_1_2">Evaporate Only</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>On the <code>On Demand</code> tab, make sure the slider following "Evaporate when T1K below:" is set to about 3.6 K. Then select the <code>Condense + Hold + Evaporate</code> button at the top. </p>
+</div>
+<div class="tabbed-block">
+<p>On the <code>On Demand</code> tab, make sure the slider following "Evaporate when T1K below:" is set to about 3.6 K. Then select the <code>Evaporate</code> button just above the slider. </p>
+</div>
+</div>
+</div>
+<h4 id="activate-on-schedule-cycling">Activate On Schedule Cycling</h4>
+<p>Once the fridge is at base temperature (this can take up to 3 hours for <code>condense + evaporate</code> or about 30 minutes for <code>evaporate</code>), you can set up the auto cycling. </p>
+<p>After about 48 hours, the fridge should be in a steady evaporate or condense state depending on which macro was chosen at the start. I usually choose the <code>Cooldown + condense + evaporate</code> macro so the fridge is at base temperature as soon as possible. </p>
+<p>Go to the <code>Cycle: On schedule</code> tab in the software and move the 2nd slider on the page to about 3.6. This is the slider following the phrase "Evaporate when T1k below:". </p>
+<p>With extra heat load on the 1K stage, I don't see T1K ever get below 3.4 K or so at the end of the condense process. If this slider is not adjusted above 3.4 K or so, then the fridge will be continuously waiting for T1K to get lower and will never start the evaporate macro. </p>
+<p>Finally, set the <code>Condense start</code> and <code>Evaporate start</code> times to your preference and hit the <code>Activate</code> button to start the on-schedule cycling. </p>
+<p>If something gets messed up about the on-schedule cycling (maybe you got the times wrong, or the evaporate temperature slider needs to be higher), just close the whole software and start over. The software as-is isn't very clear about when a certain macro is activated, and it can do weird things if you activate multiple macros over each other. </p>
+<p>Finally to re-iterate, if you need to change some parameters of the currently running on-schedule cycling, just close the program and follow these steps again. This way we avoid getting in the program into some weird unreliable state. </p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
